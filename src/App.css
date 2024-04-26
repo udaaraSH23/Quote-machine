@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition: all 0.5s ease; 
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+}
+
+.main-box {
+  height: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.qbox {
+  margin:10px 40px;
+  height: 70%;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.author {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1rem;
+}
+
+.btnContainer {
+  margin-bottom:10px ;
+
+  padding: 10px 20px;
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button:hover{
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+.btnContainer #btnNext {
+  float: right;
+}
+
+footer{
+  color: white;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .qbox {
+    font-size: 1rem;
+  }
+  .btnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
