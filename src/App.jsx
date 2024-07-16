@@ -38,12 +38,12 @@ const App = () => {
   return (
     
     <div style={{backgroundColor: background}}  className="background">
-    <div className="main-box">
+    <div className="main-box" id="quote-box">
         {quote.quotes && quote.quotes.length > 0 ? (
           <div className="qbox" >
-            <p style={{color: background,fontWeight:700}}>"{quote.quotes[index].quote}"</p>
+            <p id="text" style={{color: background,fontWeight:700}}>"{quote.quotes[index].quote}"</p>
             <div className="author">
-            <p style={{color: background}}>~~{quote.quotes[index].author}~~</p>
+            <p id="author" style={{color: background}}>~~{quote.quotes[index].author}~~</p>
             </div>
             
           </div>
@@ -51,8 +51,8 @@ const App = () => {
           <p>Please Wait</p>
         </div>)}
         <div className="btnContainer">
-          <button id="btnTwitter" style={{backgroundColor: background}}>T</button>
-          <button id="btnNext" onClick={updateQuote} style={{backgroundColor: background}}>Next Quote</button>
+          <button id="btnTwitter" style={{backgroundColor: background}}><a href="twitter.com/intent/tweet" id="tweet-quote">T</a></button>
+          <button id="new-quote" className="btnNext" onClick={updateQuote} style={{backgroundColor: background}}>Next Quote</button>
         </div>
       </div>
       <footer>By Udara Shanuka</footer>
